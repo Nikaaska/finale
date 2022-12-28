@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+.container .sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+.container .sticky .top-nav {
+  display: none;
+}
+.container .navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .navigation .nav1 {
+  display: flex;
+  align-items: center;
+}
+.container .navigation .nav1 ul {
+  display: flex;
+}
+.container .navigation .nav1 ul li {
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.container .navigation .nav2 {
+  display: flex;
+  align-items: center;
+}
+.container .navigation .nav2 ul {
+  display: flex;
+}
+.container .navigation .nav2 ul li {
+  font-size: 20px;
+  margin-right: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.container .txtimg .txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container .txtimg .txt h1 {
+  font-size: 200px;
+  font-family: "Andika", sans-serif;
+  margin-bottom: 50px;
+  color: rgb(114, 16, 114);
+}
+.container .txtimg .txt h2 {
+  font-size: 70px;
+  font-family: "Andika", sans-serif;
+  color: azure;
+}
+.container .about {
+  display: flex;
+}
+.container .about .textabout {
+  margin-left: 40px;
+}
+.container .about .textabout h3 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+.container .about .textabout p {
+  font-size: 30px;
+}
+.container h3.menu {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+.container .menupics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.container .menupics img {
+  margin-bottom: 20px;
+  width: 280px;
+  height: 250px;
+  opacity: 0.5;
+  border-radius: 20px;
+}
+.container .menupics img:hover {
+  opacity: 1;
+  transition: 0.8s;
+  border-radius: 30px;
+}
+.container .booking {
+  margin-bottom: 50px;
+  height: 500px;
+  width: 100%;
+  background: url(images/book.jpg) no-repeat center center fixed;
+  z-index: -1;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .booking button {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+}
+.container .booking .info .mail {
+  width: 150px;
+  height: 50px;
+  background-color: azure;
+  margin-right: 20px;
+}
+.container .booking .info .guests {
+  width: 150px;
+  height: 50px;
+  background-color: azure;
+  margin-right: 20px;
+}
+.container .booking .info .watch {
+  width: 150px;
+  height: 50px;
+  background-color: azure;
+  margin-right: 20px;
+}
+.container .booking .info .date {
+  width: 150px;
+  height: 50px;
+  background-color: azure;
+}
+.container .reviews {
+  margin-top: 150px;
+  text-align: center;
+}
+.container .reviews h3 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.container .reviews .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.container .reviews .cards .card {
+  text-align: center;
+  width: 300px;
+  height: 150px;
+}
+.container .reviews .cards .card h4 {
+  margin-bottom: 20px;
+}
+.container .contact {
+  width: 100%;
+  display: flex;
+}
+.container .contact .continfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .contact .continfo h3 {
+  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+.container .contact .continfo .fa-envelope {
+  font-size: 20px;
+  margin-top: 50px;
+}
+.container .contact .continfo .fa-location-dot {
+  font-size: 20px;
+  margin-top: 50px;
+}
+.container .contact .continfo .fa-phone {
+  font-size: 20px;
+  margin-top: 50px;
+}
+.container .end {
+  width: 100%;
+  height: 60px;
+}
+
+@media (max-width: 950px) {
+  .about {
+    text-align: center;
+  }
+  .about img {
+    display: none;
+  }
+}
+@media (max-width: 829px) {
+  .container .menupics img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 854px) {
+  .container .contact .map .mapouter {
+    display: none;
+  }
+  .container .contact .continfo {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 740px) {
+  .container .txtimg .txt h1 {
+    font-size: 150px;
+  }
+  .container .txtimg .txt h2 {
+    font-size: 50px;
+  }
+  .container .sticky {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  .container .sticky .nav1 {
+    display: none;
+  }
+  .container .sticky .nav2 {
+    display: none;
+  }
+}
+@media (max-width: 673px) {
+  .container .menupics {
+    justify-content: center;
+  }
+  .container .menupics img {
+    width: 375px;
+    height: 375px;
+  }
+}
+@media (max-width: 480px) {
+  .container .txtimg .txt h1 {
+    font-size: 100px;
+  }
+  .container .txtimg .txt h2 {
+    font-size: 50px;
+  }
+  .container .info {
+    display: flex;
+    align-items: center;
+  }
+}/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Andika:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+
+            $(window).on("scroll", function() {
+                console.log($(this).scrollTop())
+                
+                    if($(this).scrollTop() >= 50){
+                        $(".logo").attr("src","images/resto.png");
+                    }
+                    else {
+                        $(".logo").attr("src","images/LOGO.png");
+                        
+                    }
+                    
+                    
+
+                    
+            })
+        })
+
+    
+  
+
+    </script>
+    <script
+    src="https://kit.fontawesome.com/e42d0cd751.js"
+    crossorigin="anonymous"
+  ></script>
+  
+</head>
+<body>
+   <section class="container">
+    
+
+
+<div class="sticky">
+    
+    
+   
+    <div class="navigation">
+
+        
+        <div class="nav1">
+            <ul>
+                <li><a href="#">Main</a></li>
+                <li><a href="#about1">About</a></li>
+                <li><a href="#gallery1">Gallery</a></li>
+            </ul>
+        </div>
+
+        
+        <p><a href="https://geolab.edu.ge">
+            <img class="logo" src="images/LOGO.png" alt="GeoLablogo" width="80px" height="90px">
+            </a></p>
+            
+
+        <div class="nav2">
+            <ul>
+                <li><a href="#book1">Booking</a></li>
+                <li><a href="#reviews1">Reviews</a></li>
+                 <li><a href="#contact1">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<div class="txtimg">
+<div class="img">
+<img src="images/main.jpg" alt="friedeggs" width="100%"  height="700px"  style=" border-bottom-left-radius: 25px;border-bottom-right-radius: 25px; ">
+
+</div>
+<div class="txt">
+    <h1>GeoLab</h1>
+    <h2>Always fresh and Delightful</h2>
+</div>
+
+
+</div>
+<p id="about1" style="margin-bottom:100px;"></p>
+
+<div class="about" >
+    <img class="croissant" src="images/about.jpg" alt="croisant" width="50%" style="border-radius:25px ;" >
+    
+    <div class="textabout">
+    <h3>About</h3> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, quisquam accusantium nostrum modi, nemo, officia veritatis ipsum facere maxime assumenda voluptatum enim! Labore maiores placeat impedit, vero sed est voluptas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita alias dicta autem, maiores doloremque quo perferendis, ut obcaecati harum,
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum necessitatibus iste, nulla recusandae porro minus nemo eaque cum repudiandae quidem voluptate magnam voluptatum?
+        Nobis, saepe sapiente omnis qui eligendi pariatur. quis voluptas. Assumenda facere adipisci quaerat. Illum doloremque quae omnis vitae.
+        
+        Lonsectetur adipisicing elit. Blanditiis aspernatur, ratione dolore vero asperiores explicabo.
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ab itaque modi, reprehenderit fugit soluta, molestias optio repellat incidunt iure sed deserunt nemo magnam rem explicabo vitae. Cum, nostrum, quidem.</p>
+</div>
+</div>
+
+
+<p id="gallery1"></p>
+  <h3 class="menu " > Gallery</h3>
+
+  <div class="menupics">
+
+<img  src="images/g1.jpg" alt="pearice">
+<img src="images/g2.jpg" alt="nuts" >
+<img  src="images/g3.jpg" alt="fruits" >
+<img  src="images/g4.jpg" alt="legumes">
+
+<img src="images/g5.jpg" alt="berry">
+<img src="images/g6.jpg" alt="burger">
+<img src="images/g7.jpg" alt="boiledeggs">
+<img src="images/g8.jpg" alt="toast">
+
+<img src="images/g9.jpg" alt="pie">
+<img src="images/g10.jpg" alt="fruits">
+<img src="images/g11.jpg" alt="strawberry">
+<img src="images/g12.jpg" alt="fondu">
+
+  </div>
+
+<p id="book1" style="margin-bottom: 150px;" ></p>
+  <div class="booking"  style="border-radius: 20px;">
+<div class="info">
+
+    
+    <form class="bookform" action="#" id="bookingform">
+
+    <input type="email"  class="mail" placeholder="EMAIL">
+    <input type="number" class="guests" placeholder="NUMBER OF GUESTS" max="20" min="0">
+    <input type="time"  class="watch" >
+    <input type="date"  class="date" placeholder="__/__/__">
+    
+</form>
+</div>
+<button type="submit" form="bookingform" value="Submit">Book Table</button>
+  </div>
+
+  <p id="reviews1"  ></p>
+
+
+  <div class="reviews" >
+    <h3 >REVIEWS</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>Harry Potter</h4>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit.
+                 Earum nobis eligendi, quaerat 
+                 blanditiis natus. Aperiam!</p>
+        </div>
+        <div class="card">
+            <h4>Jack Sparrow</h4>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit.
+                 Earum nobis eligendi, quaerat 
+                 blanditiis natus. Aperiam!</p>
+        </div>
+        <div class="card">
+            <h4>Gendalf The Grey</h4>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit.
+                 Earum nobis eligendi, quaerat 
+                 blanditiis natus. Aperiam!</p>
+        </div>
+    </div>
+    
+  </div>
+
+  <div class="contact" id="contact1">
+    <div class="map">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="585" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=Panaskerteli-Tsitsishvili%201&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:600px;width:585px;}</style><a href="https://www.embedgooglemap.net">google maps web pages</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:600px;width:585px;}</style></div></div>
+    </div>
+    <div class="continfo">
+        
+        <h3>Find Us</h3>
+    
+        <i class="fa-regular fa-envelope">
+            : mail@mail.com
+        </i>
+
+        <i class="fa-solid fa-location-dot">
+           : adress adress
+        </i>
+
+        <i class="fa-solid fa-phone">
+            :+ 454 9 4343 9 
+        </i>
+
+    </div>
+  </div>
+
+  <div class="end"></div>
+
+
+
+  
+</section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/script.js"></script>
+  
+</body>
+</html>

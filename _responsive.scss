@@ -1,0 +1,118 @@
+@media (max-width:950px){
+    .about{
+        img{
+            display: none;
+        }
+        text-align: center;
+    }
+}
+
+@media (max-width:829px){
+
+    .container{
+        .menupics{
+            img{
+                width: 350px;
+                height: 350px;
+
+        }
+    }
+
+    
+   
+    }
+}
+
+@media (max-width:854px){
+    .container{
+        .contact{
+
+        .map{
+            .mapouter{
+              display: none;
+            }
+        }
+        .continfo{
+            margin: 0 auto;
+        }
+    }
+       
+
+        }
+    }  
+
+
+    @media (max-width:740px) {
+
+        .container{
+            .txtimg{
+                .txt{
+                    h1{
+                        font-size: 150px;
+                    }
+                    h2{
+                        font-size: 50px;
+                    }
+                }
+            }
+        .sticky{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+        
+            .nav1{
+                display: none;
+            }
+            .nav2{
+                display: none;
+            }
+           
+        }
+
+        
+
+    }
+    }
+
+
+@media(max-width:673px){
+    .container{
+        .menupics{
+            justify-content: center;
+            img{
+                width: 375px;
+                height: 375px;
+
+        }
+    }
+
+    
+
+    
+   
+    }
+
+}
+
+@media(max-width:480px){
+    .container{
+        .txtimg{
+            .txt{
+                h1{
+                    font-size:100px;
+                }
+                h2{
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .info{
+            display: flex;
+            align-items: center;
+        }
+
+}
+}
+
+
